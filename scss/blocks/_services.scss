@@ -1,0 +1,81 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.services {
+    height: auto;
+}
+.services__container {
+    
+}
+.services__item {
+    display: flex;
+    width: 100%;
+}
+.services__item_switched {
+    flex-direction: row-reverse;
+    .services__description {
+        padding-left: rem(16px);
+    }
+}
+.services__about-specialist {
+    width: 50%;
+    flex: 1 1 auto;
+    background-color: $light-grey;
+    padding: rem(61px) rem(61px) rem(30px);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services__specialist-img {
+    max-width: 100%;
+    width: rem(376px);
+    height: rem(290px);
+    margin: 0 auto rem(20px) auto;
+}
+.services__specialist-name {
+    font-weight: 900;
+    font-size: rem(21px);
+    line-height: rem(19px);
+    margin-bottom: 7px;
+}
+.services__specialist-state {
+    font-size: rem(17px);
+    line-height: rem(19px);
+    font-weight: 300;
+    margin-bottom: rem(7px);
+}
+.services__notify {
+    font-style: italic;
+}
+.block-title_header{
+    margin-bottom: rem(22px);
+    font-size: rem(19px);
+    line-height: rem(25px);
+    text-align: left;
+    &:after {
+        left: 0;
+        right: auto;
+        margin-left: 0;
+    }
+}
+.services__description {
+   width: 50%;
+    flex: 1 1 auto;
+    padding: rem(55px) 0 rem(40px) rem(80px);
+}
+.services__content {
+    margin-bottom: rem(16px);
+    p {
+        margin-top: 0;
+        font-family: 'proximanova';
+        font-weight: 500;
+        font-size: rem(17px);
+        line-height: rem(20px);
+    }
+    ul {
+        padding-left: rem(17px);
+        list-style: initial;
+        font-weight: 300;
+    }
+}

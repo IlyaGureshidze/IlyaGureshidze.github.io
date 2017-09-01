@@ -1,0 +1,95 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.reviews {
+    
+}
+.reviews__title {
+    margin-bottom: rem(58px);
+    width: 100%;
+    margin-top: rem(78px);
+}
+.reviews__notify {
+    max-width: rem(705px);
+    text-align: center;
+    margin-bottom: rem(72px);
+}
+.reviews-slider {
+    width: 100%;
+    margin-bottom: rem(72px);
+    position: relative;
+}
+.reviews-slider__item {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    padding: 0 rem(67px);
+}
+.reviews__wrapper {
+    display: flex;
+}
+.reviews-slider__img {
+    width: rem(199px);
+    height: rem(156px);
+    flex-shrink: 0;
+    margin-right: rem(50px);
+}
+.reviews-slider__description {
+    font-family: andantinoscript;
+    font-size: rem(25px);
+    line-height: rem(33px);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    p {
+        margin: 0;
+    }
+    &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: rem(13px);
+        width: 100%;
+        height: 100%;
+        background: url(../img/quotes.png) 0% 0% no-repeat;
+    }
+}
+.reviews-slider__author-name {
+    margin-top: rem(30px);
+    text-align: center;
+    width: 100%;
+    span {
+        color: $light-brown;
+    }
+}
+
+.baner {
+    width: 100%;
+    @include background('../img/blueBg.jpg');
+    padding: rem(67px) rem(167px) rem(67px) rem(97px);
+    display: flex;
+}
+.baner__img {
+    margin-right: rem(59px);
+}
+.baner__description {
+    color: white;
+}
+.baner__title {
+    font-weight: 900;
+    font-size: rem(21px);
+    line-height: rem(25px);
+    margin-bottom: rem(14px);
+    text-transform: uppercase;
+    margin-top: rem(12px);
+}
+.baner__text {
+    font-weight: 300;
+    font-size: rem(17px);
+    line-height: rem(25px);
+    margin-bottom: rem(18px);
+}
+.baner__button {
+    display: inline-flex;
+}

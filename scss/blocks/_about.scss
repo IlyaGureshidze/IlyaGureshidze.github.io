@@ -1,0 +1,191 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+.about{
+}
+.block-title {
+    font-family: 'proximanova';
+    font-size: rem(33px);
+    line-height: rem(37px);
+    font-weight: 900;
+    text-transform: uppercase;
+    text-align: center;
+    position: relative;
+    margin-bottom: 60px;
+    &:after {
+        content: "";
+        width: rem(50px);
+        height: rem(16px);
+        background-color: $light-brown;
+        position: absolute;
+        left: 50%;
+        margin-left: rem(-25px);
+        bottom: rem(-14px);
+    }
+}
+.block-title_about {
+    margin-top: rem(78px);
+}
+.slider {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: rem(108px);
+    position: relative;
+}
+.slider__item {
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction:  column;
+    align-items: center;
+    text-align: center;
+}
+.owl-nav {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: block !important;
+    div {
+        position: absolute;
+        width: 8px;
+        height: 12px;
+        color: transparent;
+    }
+}
+.owl-prev {
+    left: 0;
+    background: url(../img/arrowLeft.png) 50% 50% no-repeat;
+}
+.owl-next {
+   right: 0;
+   background: url(../img/arrowRight.png) 50% 50% no-repeat;
+}
+.slider__icon {
+    height: rem(56px);
+    width: 100%;
+    margin-bottom: rem(14px);
+}
+.slider__title {
+    font-family: 'proximanova';
+    font-size: rem(19px);
+    line-height: rem(16px);
+    font-weight: 900;
+    text-transform: uppercase;
+    padding: 0 rem(20px);
+}
+.about__wrapper{
+    display: flex;
+    width: 100%;
+    margin-bottom: rem(70px);
+}
+.about__column {
+    width: 50%;
+    padding-left: rem(32px);
+}
+.about__column_form {
+    padding-right: rem(32px);
+    padding-left: rem(80px);
+}
+.dropdown__list {
+}
+.dropdown__item {
+    border: rem(1px) solid #cdcdcd;
+    margin-bottom: rem(14px);
+    width: 100%;
+    transition: all .5s;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.button_about {
+    border: none;
+}
+.dropdown__item_active {
+    .dropdown__description {
+        display: block;
+    }
+    .dropdown__title-text {
+    &:after {
+        content: "";
+        background: url(../img/arrowDown.png) 50% 50% no-repeat;
+        position: absolute;
+        right: rem(-14px);
+        width: rem(8px);
+        height: rem(5px);
+        top: rem(7px);
+    }
+}
+}
+.dropdown__title {
+    background-color: $light-grey;
+    padding: rem(20px);
+    cursor: pointer;
+    &:hover {
+        background-color: darken($light-grey,5%);
+    }
+}
+.dropdown__title-text {
+    position: relative;
+    display: inline-block;
+    font-family: 'proximanova';
+    font-size: rem(19px);
+    line-height: rem(21px);
+    font-weight: 300;
+    &:after {
+        content: "";
+        background: url(../img/arrowRight.png) 50% 50% no-repeat;
+        position: absolute;
+        right: rem(-9px);
+        width: rem(7px);
+        height: rem(8px);
+        top: rem(7px);
+    }
+}
+.dropdown__description {
+    font-family: 'proximanova';
+    font-size: rem(17px);
+    line-height: rem(23px);
+    font-weight: 300;
+    padding: rem(36px) rem(32px);
+    display: none;
+}
+.consult-form {
+    width: 100%;
+}
+.consult-form__notify{
+    font-family: 'proximanova';
+    font-size: rem(19px);
+    line-height: rem(21px);
+    font-weight: 300;
+    margin-bottom: rem(38px);
+}
+.consult-form__inputWrapper {
+    position: relative;
+    margin-bottom: rem(9px);
+    max-width: rem(220px);
+}
+.consult-form__inputWrapper_textarea {
+    max-width: 100%;
+}
+.consult-form__input {
+    border: 1px solid #cdcdcd;
+    width: 100%;
+    padding: rem(21px) rem(26px);
+    &:focus {
+        border-color: $brown;
+        & + label {
+            display: none !important;
+        }
+    }
+}
+.consult-form__input_textarea {
+    resize: none;
+}
+.consult-form__label {
+    position: absolute;
+    left: rem(26px);
+    top: rem(21px);
+    span {
+        color: #fb583c;
+        padding-left: rem(6px);
+    }
+}

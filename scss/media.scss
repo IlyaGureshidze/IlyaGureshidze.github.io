@@ -1,0 +1,166 @@
+@media screen and (max-width: 1000px) {
+    .hero__wrapper {
+        width: 95%;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .hero__buttons {
+        justify-content: center;
+    }
+    .services__description {
+        padding-right: rem(16px);
+    }
+    .owl-nav {
+        div {
+            display: none;
+        }
+    }
+    .owl-dots {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    bottom: -20px;
+        width: 100%;
+}
+.owl-dot {
+  background-color: $light-grey;
+    border:  1px solid #cdcdcd;
+    flex: 0 1 auto;
+  border-radius: 50%;
+  width: 11px;
+  height: 11px;
+  margin: 0 2px;
+    &.active {
+        background-color: $brown;
+    }
+}
+}
+@media screen and (max-width: 720px) {
+    .services__item {
+        flex-direction: column;
+    }
+    .services__about-specialist {
+        width: 100%;
+        text-align: center;
+    }
+    .services__description {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .reviews__title {
+        margin-top: 0;
+    }
+    .company {
+        flex-direction: column;
+    }
+    .company__about {
+        max-width: 100%;
+        margin-bottom: rem(30px);
+    }
+    .baner {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+    .about__wrapper {
+        flex-direction: column;
+    }
+    .about__column {
+        width: 100%;
+        padding-right: 2rem;
+        margin-bottom: rem(30px);
+        
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    .about__column_form {
+        padding-left: 2rem;
+    }
+    .scroll-button {
+        bottom: 1.125rem;
+    }
+    .contacts__footer-container {
+        padding: 3.5rem 2.625rem;
+    }
+    .container_contacts {
+        flex-direction: column;
+        text-align: center;
+    }
+    .city-info {
+        width: 100%;
+    }
+    .city-info__title {
+        display: inline;
+    }
+    .consult-form_contacts {
+        padding-left: 0;
+        form {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .consult-form__inputWrapper_textarea,.consult-form__inputWrapper {
+        max-width: 100%;
+    }
+    .about__column_form {
+        form {
+            max-width: 50%;
+            margin: 0 auto;
+        }
+    }
+    .city-info__list {
+        justify-content: center;
+    }
+    .reviews__notify {
+        padding: 0 rem(10px);
+    }
+}
+@media screen and (max-width: 640px) {
+    .reviews__wrapper {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .reviews-slider__img {
+        margin: 0 0 rem(20px);
+    }
+    .reviews-slider__item {
+        padding: 0 rem(10px);
+    }
+    .hero__buttons {
+        flex-direction: column;
+    }
+    .free-consult {
+        width: auto;
+        margin: 0 0 rem(20px);
+    }
+}
+@media screen and (max-width: 600px) {
+    .consult-form_contacts{
+        form {
+            max-width: 100%;
+        }
+    }
+    .about__column_form {
+        form {
+            max-width: 100%;
+        }
+    }
+}
+@media screen and (max-width: 480px) {
+    .baner {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .baner__img {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 425px) {
+    
+}
+@media screen and (max-width: 320px) {
+    
+}

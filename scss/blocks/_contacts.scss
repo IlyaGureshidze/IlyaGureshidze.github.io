@@ -1,0 +1,154 @@
+@import "../config/_variables";
+@import "../config/_mixins";
+
+.contacts {
+    height: auto;
+}
+.container_contacts {
+    align-items: flex-start;
+}
+.company {
+    display: flex;
+    margin-bottom: rem(70px);
+    margin-top: rem(30px);
+}
+.company__about {
+    padding: 0 rem(15px);
+    margin-right: rem(34px);
+    max-width: rem(292px);
+    flex-shrink: 0;
+}
+.company__text {
+    font-weight: 300;
+    font-size: rem(16px);
+    line-height: rem(21px);
+    margin-bottom: rem(15px);
+    p {
+        margin: 0;
+        text-indent: rem(36px);
+    }
+}
+.company__news {
+    flex: 1 1 auto;
+    padding: 0 rem(15px);
+}
+.new {
+    display: flex;
+    width: 100%;
+    border-bottom: rem(1px) solid $blue;
+    margin: rem(27px) 0;
+    padding-bottom: rem(16px);
+}
+.block-title_company {
+    margin-bottom: rem(32px);
+}
+.new__img {
+    width: rem(110px);
+    height: rem(87px);
+    flex-shrink: 0;
+    margin-right: rem(14px);
+}
+.new__description {}
+.new__date {
+    padding-left: rem(36px);
+    height: rem(16px);
+    padding-bottom: rem(11px);
+    color: #af7c00;
+}
+.new__intro {
+    text-indent: rem(36px);
+}
+.contacts__footer {
+    width: 100%;
+    @include background('../img/footerBg.jpg');
+}
+.contacts__footer-container {
+    background-color: $overlay-bottom;
+    display: flex;
+    padding: rem(88px) rem(60px) rem(105px) rem(42px);
+}
+.city-info {
+    width: 50%;
+}
+.city-info__list {
+    display: flex;
+    margin-bottom: rem(43px);
+}
+.city-info__item {
+    font-size: rem(17px);
+    line-height: rem(25px);
+    padding: rem(8px) rem(18px);
+    margin-right: rem(112px);
+    color: white;
+    flex-shrink: 0;
+    cursor: pointer;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.city-info__item_active {
+    border: none;
+    background-color: $brown;
+    color: black;
+    &:hover {
+        background-color: darken($brown,5%);
+        text-decoration: none;
+    }
+}
+.city-info__contacts {}
+.city-info__block {
+    display: none;
+}
+.city-info__block_active {
+    display: block;
+}
+.city-info__title {
+    text-transform: uppercase;
+    color: $brown;
+    font-size: rem(17px);
+    line-height: rem(25px);
+    position: relative;
+    letter-spacing: rem(4px);
+    &:before {
+        content: '//';
+        position: absolute;
+        color: white;
+        left: rem(-21px);
+        letter-spacing: rem(3px);
+    }
+}
+.city-info__text {
+    color: white;
+    margin-bottom: rem(39px);
+}
+
+.consult-form_contacts {
+    flex: 1;
+    padding-left: rem(145px);
+}
+.consult-form__notify_contacts {
+    color: white;
+    text-align: center;
+    font-size: rem(14px);
+    line-height: rem(16px);
+}
+.consult-form__inputWrapper_contacts {
+    max-width: rem(163px);
+}
+.consult-form__input_contacts {
+    padding: rem(13px) rem(20px);
+}
+.consult-form__label_contacts {
+    left: rem(20px);
+    top: rem(16px);
+    font-size: rem(14px);
+    line-height: rem(16px);
+}
+.button_contacts {
+    border: none;
+    padding: rem(13px) rem(20px);
+    color: black;
+}

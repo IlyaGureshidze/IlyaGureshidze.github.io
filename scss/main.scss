@@ -1,0 +1,18 @@
+//Config
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+//Base
+@import "layout/_fonts.scss";
+@import "layout/_base.scss";
+@import "layout/_adjustments.scss";
+
+//Sections
+@import "blocks/_hero.scss";
+@import "blocks/_about.scss";
+@import "blocks/_services.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_contacts.scss";
+
+//Responsive
+@import "media.scss";

@@ -1,0 +1,33 @@
+html {
+    @include tablets {
+    font-size: rem(15px);
+  }
+
+  @include phones {
+    font-size: rem(13px);
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'proximanova', Arial, Helvetica, sans-serif;
+  line-height: 1.42;
+  font-weight: 500;
+  font-style: normal;
+  color: black;
+  overflow-x: hidden;
+}
+*, *::before, *::after { 
+  box-sizing: border-box;
+  outline: none;
+}
+body, html {
+  height: auto;//100%;
+  width: 100%;
+overflow-x: hidden;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
