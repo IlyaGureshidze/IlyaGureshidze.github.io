@@ -281,7 +281,7 @@ ul {
 
 .header {
   line-height: 1;
-  background: url("https://ilyagureshidze.github.io/papastiv/img/mainBG.jpg") 0 0 no-repeat;
+  background: url("https://ilyagureshidze.github.io/papastiv/img/mainBg.jpg") 0 0 no-repeat;
   position: relative;
   z-index: 10; }
 
@@ -454,12 +454,12 @@ ul {
       color: #242321; }
 
 .service_left {
-  background: url("https://ilyagureshidze.github.io/papastiv/img/serviceBG1.jpg") 50% 50% no-repeat;
+  background: url("https://ilyagureshidze.github.io/papastiv/img/serviceBg1.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover; }
 
 .service_right {
-  background: url("https://ilyagureshidze.github.io/papastiv/img/serviceBG2.jpg") 50% 50% no-repeat;
+  background: url("https://ilyagureshidze.github.io/papastiv/img/serviceBg2.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover; }
 
@@ -573,7 +573,7 @@ ul {
   padding: 1rem 0; }
 
 .shares {
-  background: url("https://ilyagureshidze.github.io/papastiv/img/actionsBG.jpg") 50% 50% no-repeat;
+  background: url("https://ilyagureshidze.github.io/papastiv/img/actionsBg.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover;
   padding-bottom: 3.875rem;
@@ -610,7 +610,7 @@ ul {
     font-weight: 900; }
 
 .reviews {
-  background: url("https://ilyagureshidze.github.io/papastiv/img/feedbackBG.jpg") 50% 50% no-repeat;
+  background: url("https://ilyagureshidze.github.io/papastiv/img/feedbackBg.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover;
   padding-bottom: 7.625rem; }
