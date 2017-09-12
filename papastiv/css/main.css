@@ -610,7 +610,7 @@ ul {
     font-weight: 900; }
 
 .reviews {
-  background: url("../img/feedbackBG.jpg") 50% 50% no-repeat;
+  background: url("../../img/feedbackBG.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover;
   padding-bottom: 7.625rem; }
