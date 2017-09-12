@@ -258,13 +258,13 @@ ul {
     position: absolute; }
 
 .owl-prev {
-  background: url("../img/arrowLeftBl.png") 50% 50% no-repeat;
+  background: url("../../img/arrowLeftBl.png") 50% 50% no-repeat;
   left: 0; }
   .owl-prev:hover {
     background: rgba(125, 215, 227, 0.5) url("../../img/arrowLeftB.png") 50% 50% no-repeat; }
 
 .owl-next {
-  background: url("../img/arrowRightBl.png") 50% 50% no-repeat;
+  background: url("../../img/arrowRightBl.png") 50% 50% no-repeat;
   right: 0; }
   .owl-next:hover {
     background: rgba(125, 215, 227, 0.5) url("../../img/arrowRightB.png") 50% 50% no-repeat; }
@@ -281,7 +281,7 @@ ul {
 
 .header {
   line-height: 1;
-  background: url("../img/mainBG.jpg") 0 0 no-repeat;
+  background: url("../../img/mainBG.jpg") 0 0 no-repeat;
   position: relative;
   z-index: 10; }
 
@@ -317,7 +317,7 @@ ul {
   color: #7dd7e3; }
 
 .hero {
-  background: url("../img/mainBG.jpg") 50% 50% no-repeat;
+  background: url("../../img/mainBG.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover;
   height: 50.1875rem;
@@ -573,7 +573,7 @@ ul {
   padding: 1rem 0; }
 
 .shares {
-  background: url("../img/actionsBG.jpg") 50% 50% no-repeat;
+  background: url("../../img/actionsBG.jpg") 50% 50% no-repeat;
   background-size: cover;
   background-size: cover;
   padding-bottom: 3.875rem;
@@ -619,16 +619,16 @@ ul {
   color: #fff; }
 
 .reviews__list .owl-prev {
-  background: url("../img/arrowLeftW.png") 50% 50% no-repeat;
+  background: url("../../img/arrowLeftW.png") 50% 50% no-repeat;
   left: 0; }
   .reviews__list .owl-prev:hover {
-    background: rgba(125, 215, 227, 0.5) url("../img/arrowLeftW.png") 50% 50% no-repeat; }
+    background: rgba(125, 215, 227, 0.5) url("../../img/arrowLeftW.png") 50% 50% no-repeat; }
 
 .reviews__list .owl-next {
-  background: url("../img/arrowRightW.png") 50% 50% no-repeat;
+  background: url("../../img/arrowRightW.png") 50% 50% no-repeat;
   right: 0; }
   .reviews__list .owl-next:hover {
-    background: rgba(125, 215, 227, 0.5) url("../img/arrowRightW.png") 50% 50% no-repeat; }
+    background: rgba(125, 215, 227, 0.5) url("../../img/arrowRightW.png") 50% 50% no-repeat; }
 
 .reviews__list .owl-dots {
   display: -webkit-box;
@@ -1029,7 +1029,7 @@ ul {
   .remount__button:after {
     content: '';
     position: absolute;
-    background: url(../img/arrowDownB.png) 0% 0% no-repeat;
+    background: url(../../img/arrowDownB.png) 0% 0% no-repeat;
     width: 1.875rem;
     height: 1.25rem;
     top: 0.3125rem;
@@ -1037,7 +1037,7 @@ ul {
   .remount__button:hover {
     color: #fff; }
     .remount__button:hover:after {
-      background: url(../img/arrowDownW.png) 0% 0% no-repeat; }
+      background: url(../../img/arrowDownW.png) 0% 0% no-repeat; }
 
 .remount__content {
   display: none; }
@@ -1091,11 +1091,11 @@ ul {
 .remount__item_black .remount__button {
   color: #fff; }
   .remount__item_black .remount__button:after {
-    background: url(../img/arrowDownW.png) 0% 0% no-repeat; }
+    background: url(../../img/arrowDownW.png) 0% 0% no-repeat; }
   .remount__item_black .remount__button:hover {
     color: #7dd7e3; }
     .remount__item_black .remount__button:hover:after {
-      background: url(../img/arrowDownBl.png) 0% 0% no-repeat; }
+      background: url(../../img/arrowDownBl.png) 0% 0% no-repeat; }
 
 .remount__title-black {
   padding: 3.375rem 0;
