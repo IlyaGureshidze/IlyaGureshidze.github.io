@@ -1,0 +1,39 @@
+@mixin background($url) {
+    background: url($url) 50% 50% no-repeat;
+    background-size: cover;
+}
+
+//responsive
+@function rem($px) {
+  @return $px / 16px + 0rem;
+}
+@mixin desktop {
+  @media screen and (max-width: $desktop) {
+    @content;
+  }
+}
+@mixin desktopBS {
+  @media screen and (max-width: $desktopBS) {
+    @content;
+  }
+}
+@mixin tablets {
+  @media screen and (max-width: $tablets) {
+    @content;
+  }
+}
+@mixin phones {
+  @media screen and (max-width: $phones) {
+    @content;
+  }
+}
+@mixin small {
+  @media screen and (max-width: $small) {
+    @content;
+  }
+}
+@mixin smallest {
+  @media screen and (max-width: $smallest) {
+    @content;
+  }
+}

@@ -1,0 +1,86 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.services {
+    
+}
+.services__container {
+    display: flex;
+}
+.service {
+    flex: 1 1 50%;
+    color: $white;
+    height: rem(563px);
+    position: relative;
+    cursor: pointer;
+    &:hover {
+        color: $black;
+        .service__wrapper {
+            background-color: $light-blueRGB;
+        }
+        .service__title {
+            span {
+                color: $white;
+            }
+        }
+        .service__button {
+            background-color: $white;
+            color: $black;
+            &:hover {
+                background-color: darken($white,5%);
+            }
+        }
+        .service__link {
+            color: $black;
+        }
+    }
+}
+.service_left {
+   @include background('../img/serviceBG1.jpg');
+   background-size: cover; 
+}
+.service_right {
+    @include background('../img/serviceBG2.jpg');
+   background-size: cover; 
+}
+.service__wrapper {
+    background-color: $blackRGB;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10% 20%;
+}
+.service__title {
+    font-size: rem(34px);
+    line-height: rem(48px);
+    font-weight: 300;
+    margin: 0;
+    span {
+      font-weight: 700;
+        font-size: rem(36px);
+    }
+}
+.service__list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 0 5%;
+}
+.service__item {
+    margin-right: rem(21px);
+    flex: 0 0 auto;
+}
+.service__link {
+    color: $white;
+    text-decoration: none;
+    font-weight: 900;
+    font-size: rem(24px);
+    line-height: rem(48px);
+}

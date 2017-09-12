@@ -1,0 +1,26 @@
+//Config
+@import "config/_variables.scss";
+@import "config/_mixins.scss";
+
+//Base
+@import "layout/_fonts.scss";
+@import "layout/_base.scss";
+@import "layout/_adjustments.scss";
+
+//Sections
+@import "blocks/_menu.scss";
+@import "blocks/_hero.scss";
+@import "blocks/_advantages.scss";
+@import "blocks/_services.scss";
+@import "blocks/_examples.scss";
+@import "blocks/_shares.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_portfolio.scss";
+@import "blocks/_about.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_actions.scss";
+@import "blocks/_inner.scss";
+@import "blocks/_servicePage.scss";
+
+//Responsive
+@import "media.scss";

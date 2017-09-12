@@ -1,0 +1,40 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.shares {
+    @include background('../img/actionsBG.jpg');
+    background-size: cover;
+    padding-bottom: rem(62px);
+    position: relative;
+}
+.shares__list {}
+.shares__item {
+position: relative;
+}
+.shares__item-container {
+    margin: 0 auto;
+    position: relative;
+    max-width: rem(890px);
+    background-color: $white;
+    padding: rem(50px);
+    text-align: center;
+    box-shadow: 0 0 rem(15px) rgba(66, 65, 63, 0.3);
+     @include tablets {
+    box-shadow: none;
+         border: 1px solid rgba(0,0,0,.1);
+  }
+    p {
+        font-size: rem(24px);
+        margin-top: rem(10px);
+    }
+    
+}
+.shares__sale {
+    font-size: rem(30px);
+    color: $light-blue;
+    span {
+        font-size: rem(60px);
+        line-height: 1.2;
+        display: block;
+        font-weight: 900;
+    }
+}

@@ -1,0 +1,37 @@
+.menu {
+    background: url('../img/mainBG_noimg.jpg') 0 0 no-repeat;
+    padding: rem(13px) 0 rem(10px) 0;
+}
+.header {
+    line-height: 1;
+    background: url('../img/mainBG.jpg') 0 0 no-repeat;
+    position: relative;
+    z-index: 10;
+}
+.menu__container {
+    justify-content: space-between;
+    position: relative;
+}
+.menu__list {
+    display: flex;
+}
+.menu__item {
+    margin-right: rem(57px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.menu__link {
+    text-decoration: none;
+    color: $white;
+    font-family: 'univia_pro';
+    font-weight: 300;
+    font-size: rem(20px);
+    line-height: normal;
+    &:hover {
+        color: $light-blue;
+    }
+}
+.menu__link_active {
+    color: $light-blue;
+}

@@ -1,0 +1,29 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.portfolio {
+    position: relative;
+}
+.portfolio_title {
+    margin-bottom: 0;
+    line-height: 1;
+    margin-top: rem(63px);
+}
+.portfolio__list {
+    width: 100%;
+    display: flex;
+    position: relative;
+    max-width: rem(970px);
+    .owl-prev {
+        left: rem(-110px);
+    }
+    .owl-next {
+        right: rem(-110px);
+    }
+}
+.portfolio__item {
+    justify-content: center;
+    display: flex;
+    flex: 1 1 auto;
+}
+.portfolio__link {
+}

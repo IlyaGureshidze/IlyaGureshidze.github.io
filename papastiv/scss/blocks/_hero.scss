@@ -1,0 +1,43 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.hero {
+   @include background('../img/mainBG.jpg');
+   background-size: cover;
+    height: rem(803px);
+    position: relative;
+    margin-top: rem(-118px);
+}
+.hero__container {
+    align-items: flex-start;
+    height: 100%;
+    flex-direction: column;
+    padding-right: rem(600px);
+    @include desktopBS {
+        padding-right: rem(360px);
+    }
+}
+.hero__title {
+    color: $white;
+    font-size: rem(65px);
+    line-height: rem(80px);
+    margin: 0;
+    font-weight: 300;
+    span {
+        color: $light-blue;
+        font-weight: 900;
+    }
+}
+.hero__list {
+    display: flex;
+    padding: rem(20px) 0 rem(40px);
+}
+.hero__item {
+    color: $light-blue;
+    margin-right: rem(22px);
+    font-size: rem(24px);
+    line-height: rem(72px);
+    &:last-child {
+        margin-right: 0;
+    }
+}
+.hero__button {}

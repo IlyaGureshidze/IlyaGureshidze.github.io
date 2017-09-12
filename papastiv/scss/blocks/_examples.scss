@@ -1,0 +1,36 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.examples {
+    
+}
+.examples__list {
+    width: 100%;
+    display: flex;
+    padding: rem(58px) 0 rem(25px);
+}
+.examples__item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: rem(13px);
+    margin-bottom: rem(25px);
+}
+.examples__img {
+    img {
+        max-width: 100%;
+    }
+}
+.examples__title {
+    font-size: rem(20px);
+    line-height: normal;
+    padding: 0 13%;
+}
+.examples__price {
+    font-weight: 900;
+    font-size: rem(20px);
+    line-height: rem(40px);
+    padding: rem(16px) 0;
+}
+.examples__button {}

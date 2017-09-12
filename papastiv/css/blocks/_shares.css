@@ -1,0 +1,39 @@
+.shares {
+  background: url("../img/actionsBG.jpg") 50% 50% no-repeat;
+  background-size: cover;
+  background-size: cover;
+  padding-bottom: 3.875rem; }
+
+.shares__item-container {
+  margin: 0 auto;
+  position: relative;
+  max-width: 55.625rem;
+  background-color: #fff;
+  padding: 3.125rem;
+  text-align: center;
+  -webkit-box-shadow: 0 0 0.9375rem rgba(66, 65, 63, 0.3);
+  box-shadow: 0 0 0.9375rem rgba(66, 65, 63, 0.3); }
+  .shares__item-container p {
+    font-size: 1.5rem;
+    margin-top: 0.625rem; }
+
+.shares__sale {
+  font-size: 1.875rem;
+  color: #7dd7e3; }
+  .shares__sale span {
+    font-size: 3.75rem;
+    line-height: 1.2;
+    display: block;
+    font-weight: 900; }
+
+.owl-nav div {
+  width: 97px;
+  height: 97px;
+  border-radius: 50%;
+  color: transparent; }
+
+.owl-prev {
+  background: rgba(125, 215, 227, 0.5) url("../img/arrowLeftW.png") 50% 50% no-repeat; }
+
+.owl-next {
+  background: rgba(125, 215, 227, 0.5) url("../img/arrowRightW.png") 50% 50% no-repeat; }

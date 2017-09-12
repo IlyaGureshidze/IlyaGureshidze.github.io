@@ -1,0 +1,177 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.wrapper {
+  width: 100%; 
+  height: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.maincontent {
+  -height: 100%;
+  -min-height: rem(550px);//rem(550px);
+  flex: 1 1 auto;
+}
+.container {
+  max-width: rem(1170px);//rem(1000px);
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.column {
+    flex-direction: column;
+}
+.footer {
+    flex: 0 0 auto;
+}
+.button {
+    background-color: $light-blue;
+    color: $white;
+    padding: rem(16px) rem(40px);
+    text-transform: uppercase;
+    border-radius: rem(10px);
+    text-decoration: none;
+    font-size: rem(18px);
+    font-weight: 900;
+    display: inline-block;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($light-blue,5%);
+    }
+}
+    .blocktitle {
+        font-size: rem(36px);
+        line-height: rem(72px);
+        width: 100%;
+        text-align: center;
+        font-weight: 300;
+    }
+.hamburger {
+    display: none;
+    width: rem(24px);
+    position: absolute;
+    left: rem(20px);
+    height: 1.4rem;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    margin-left: rem(30px);
+    margin-right: rem(30px);
+    cursor: pointer;
+    position: fixed;
+    top: rem(15px);
+    left: rem(-10px);
+    z-index: 11;
+    
+    @include tablets {
+        display: flex;
+    }
+    @include phones {
+        margin-right: rem(20px);
+    }
+}
+.hamburger__item {
+    background-color: #fff;
+    border-radius: rem(4px);
+    height: rem(4px);
+    margin-bottom: rem(4px);
+    box-shadow: 0 0 rem(4px) #333;
+}
+.fullscreen-menu {
+    background-color: rgba(47,50,52,.99);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 15;
+    display: none;
+}
+.fullscreen-menu__close {
+    position: fixed;
+    background: url('../img/cross.png') center center no-repeat;
+    height: rem(18px);
+    width: rem(18px);
+    z-index: 10;
+    top: rem(32px);
+    right: rem(35px);
+    cursor: pointer;
+}
+.fullscreen-menu__list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column wrap;
+    height: 100vh;
+}
+.fullscreen-menu__item {
+    position: relative;
+    margin-bottom: rem(32px);
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+.fullscreen-menu__link {
+    text-transform: uppercase;
+    color: #fff;
+    font-family: ubuntu;
+    font-weight: 500;
+    font-size: rem(24px);
+    line-height: rem(40px);
+    text-decoration: none;
+    position: relative;
+    
+    &:hover {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+}
+.overlay {
+    background-color: rgba(47, 50, 52, 0.92);
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9;
+    display: none;
+}
+    .owl-nav {
+        position: absolute;
+        top: 50%;
+        width: 100%;
+        margin-top: rem(-46px);
+        div {
+            width: rem(97px);
+            height: rem(97px);
+            border-radius: 50%;
+            color: transparent;
+            position: absolute;
+        }
+    }
+    .owl-prev {
+        background: url('../img/arrowLeftBl.png') 50% 50% no-repeat;
+        left: 0;
+        &:hover {
+            background: $owl-buttonRGB url('../img/arrowLeftB.png') 50% 50% no-repeat;
+        }
+    }
+    .owl-next {
+        background: url('../img/arrowRightBl.png') 50% 50% no-repeat;
+        right: 0;
+        &:hover {
+            background: $owl-buttonRGB url('../img/arrowRightB.png') 50% 50% no-repeat;
+        }
+    }
+    .text-page {
+        padding-bottom: rem(36px);
+    }
+    .text-page__container {
+        .text-block {
+            text-align: left;
+        }
+    }

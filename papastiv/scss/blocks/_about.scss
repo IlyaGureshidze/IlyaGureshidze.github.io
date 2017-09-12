@@ -1,0 +1,16 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.about {
+    
+}
+.blocktitle_about {
+    margin: 0;
+}
+.text-block {
+    text-align: center;
+    p {
+        margin: 0 0 rem(34px);
+        font-size: rem(20px);
+        line-height: rem(30px);
+    }
+}

@@ -1,0 +1,64 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.footer {
+    background-color: $black;
+}
+.blocktitle_footer {
+    color: $white;
+}
+.form {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    padding-bottom: rem(26px);
+    border-bottom: rem(3px) solid $light-blue;
+}
+.form__input {
+    padding: rem(16px) rem(40px);
+    border-radius: rem(10px);
+    margin-bottom: rem(30px);
+    border: none;
+    border: rem(3px) solid $white;
+    width: rem(350px);
+    font-size: rem(20px);
+    font-weight: 300;
+    &:last-child {
+        margin-right: 0;
+    }
+    &:focus {
+        border-color: $light-blue;
+    }
+}
+.form__button {
+    border: none;
+    width: rem(350px);
+    margin-bottom: rem(30px);
+}
+.contacts {
+}
+.contacts__list {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: rem(26px);
+    border-bottom: rem(3px) solid $light-blue;
+}
+.contacts__item {
+    display: flex;
+    width: rem(350px);
+    margin-bottom: rem(30px);
+}
+.contacts__img {
+    margin-right: rem(31px);
+}
+.contacts__text {
+    color: $white;
+    display: flex;
+    align-items: center;
+    font-size: rem(20px);
+    line-height: rem(30px);
+    font-weight: 300;
+}
+.footer__menu {
+    padding: rem(42px) 0;
+}

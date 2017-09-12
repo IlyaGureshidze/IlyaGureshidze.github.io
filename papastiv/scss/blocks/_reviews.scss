@@ -1,0 +1,77 @@
+@import "../config/_variables.scss";
+@import "../config/_mixins.scss";
+.reviews {
+    @include background('../img/feedbackBG.jpg');
+    background-size: cover;
+    padding-bottom: rem(122px);
+}
+.blocktitle_reviews {
+    color: $white;
+}
+.reviews__list {
+    .owl-prev {
+        background: url('../img/arrowLeftW.png') 50% 50% no-repeat;
+        left: 0;
+        &:hover {
+            background: $owl-buttonRGB url('../img/arrowLeftW.png') 50% 50% no-repeat;
+        }
+    }
+    .owl-next {
+        background: url('../img/arrowRightW.png') 50% 50% no-repeat;
+        right: 0;
+        &:hover {
+            background: $owl-buttonRGB url('../img/arrowRightW.png') 50% 50% no-repeat;
+        }
+    }
+    .owl-dots {
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        width: 100%;
+        bottom: rem(-65px);
+    }
+    .owl-dot {
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: rem(1px) solid $white;
+        margin-right: rem(16px);
+        &:last-child {
+            margin-right: 0;
+        }
+        &.active {
+            position: relative;
+            &:after {
+                content: '';
+                background-color: $light-blue;
+                border-radius: 50%;
+                width: 10px;
+                height: 9px;
+                position: absolute;
+                transform: translate(-50%,-50%);
+                top: 50%;
+                left: 50%;
+            }
+        }
+    }
+}
+.reviews__item {}
+.reviews__item-container {
+    margin: 0 auto;
+    position: relative;
+    max-width: rem(890px);
+    background-color: $light-blue;
+    padding: rem(55px);
+    color: $white;
+    p {
+        margin: 0;
+        font-size: rem(20px);
+    }
+}
+.reviews__author {
+    margin-top: rem(20px) !important;
+}
+.reviews__date {
+    font-size: rem(16px);
+    font-weight: 300;
+}
